@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+include(pico_sdk_import.cmake)
+project(engine-rpm-indicator C CXX)
+pico_sdk_init()
+add_executable(${PROJECT_NAME} main.cpp led.cpp adc.cpp)
+target_link_libraries(${PROJECT_NAME} PUBLIC pico_stdlib pico_stdio hardware_gpio hardware_adc hardware_pwm)
+pico_enable_stdio_usb(${PROJECT_NAME} ON)
+pico_add_extra_outputs(${PROJECT_NAME})

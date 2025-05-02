@@ -1,0 +1,23 @@
+[
+    {
+        "name": "pico",
+        "compilers": {
+            "CXX": "/opt/homebrew/bin/arm-none-eabi-g++",
+            "C": "/opt/homebrew/bin/arm-none-eabi-gcc"
+        },
+        "cmakeSettings": {
+            "PICO_BOARD": "pico"
+        }
+    },
+    {
+        "name": "pico2",
+        "compilers": {
+            "CXX": "/opt/homebrew/bin/arm-none-eabi-g++",
+            "C": "/opt/homebrew/bin/arm-none-eabi-gcc"
+        },
+        "cmakeSettings": {
+            "PICO_BOARD": "pico2",
+            "PICO_PLATFORM":"rp2350"
+        }
+    }
+]
